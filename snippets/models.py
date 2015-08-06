@@ -16,6 +16,8 @@ class Snippet(models.Model):
                                 max_length=100)
     style = models.CharField(choices=STYLE_CHOICES, default='friendly',
                              max_length=100)
+    
+
 
     class Meta:
         ordering = ('created',)
